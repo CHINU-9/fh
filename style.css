@@ -1,0 +1,63 @@
+body {
+  margin: 1%; /* Use relative units for margin */
+  background-color: grey;
+  background-image: url("wp7105576.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the gallery items */
+}
+
+.gallery-item {
+  position: relative;
+  width: 90%; /* Use relative units for width */
+  height: auto; /* Allow height to adjust based on content */
+}
+
+img {
+  margin: 1%; /* Use relative units for margin */
+  width: 100%;
+  max-width: 100%; /* Ensure images don't exceed their container */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: -6px auto; /* Center the images horizontally */
+  border-radius: 72px; /* Simplified border radius */
+  border-right: solid;
+  border-left: solid;
+
+  transform: rotateY(171deg);
+  transition: 2s;
+}
+
+.gallery-item img:hover {
+  transform: rotateY(-180deg);
+  transition: 2s;
+}
+
+.gallery-item p {
+  margin-top: 2%; /* Use relative units for margin */
+  text-align: center; /* Center the text */
+  font-size: 3em; /* Use relative units for font size */
+
+  font-family: cursive;
+}
+
+h1 {
+  font-size: 6em; /* Use relative units for font size */
+  text-align: center; /* Center the heading */
+  border: 5px solid #010c14;
+  border-radius: 116px; /* Simplified border radius */
+  margin: 5% auto; /* Use relative units for margin and center the heading horizontally */
+}
+#fav1{
+  color: #a900ff;
+}
